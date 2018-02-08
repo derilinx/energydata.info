@@ -12,7 +12,7 @@
 
 [submodule "ckanext-mvt"]
 	path = ckanext-mvt
-	url = https://github.com/developmentseed/ckanext-mvt
+	url = https://github.com/derilinx/ckanext-mvt
 [submodule "ckanext-dcat"]
 	path = ckanext-dcat
 	url = https://github.com/ckan/ckanext-dcat
