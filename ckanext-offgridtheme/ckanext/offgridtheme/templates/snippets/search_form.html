@@ -1,0 +1,24 @@
+{% ckan_extends %}
+
+{% block search_input %}
+  <div class="input-group search-input-group">
+    <div class="search-input control-group search-giant">
+    <input id="field-giant-search" type="text" class="form-control" name="q" value="{{ query }}" autocomplete="off" placeholder="{{ placeholder }}">
+    {% block search_input_button %}
+    <span class="input-group-btn">
+      <button class="btn btn-default" type="submit" value="search">
+        <i class="fa fa-search"></i>
+      </button>
+    </span>
+    {% endblock %}
+        </div>
+  </div>
+{% endblock %}
+
+{% block search_title %}
+    {% if not error %}
+        <h1>{% snippet 'snippets/search_result_text.html', query=query, count=count, type=type %}</h1>
+    {% else %}
+        <h1>Error</h1>
+    {% endif %}
+{% endblock %}
